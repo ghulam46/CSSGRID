@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+
+    <style>
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .container {
+            width: 600px ;
+            margin: 50px auto;
+            border: 5px solid #333;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        .content::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        header {
+            background-color: rgb(235, 51, 235);
+            padding: 40px 0;
+        }
+
+        .sidebar {
+            float: left;
+            width: 40%;
+        }
+
+        .sidebar aside {
+            background-color: rgb(65, 65, 223);
+            padding: 60px 0;
+        }
+
+        .sidebar nav {
+            background-color: rgb(237, 82, 54);
+            padding: 100px 0;
+        }
+
+        main {
+            background-color: burlywood;
+            padding: 171.5px;
+            box-sizing: border-box;
+            float: right;
+            width: 60%;
+        }
+
+        footer {
+            background-color: #666;
+            padding: 20px 0;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="content">
+            <div class="sidebar">
+                <aside>Aside</aside>
+                <nav>Nav</nav>
+            </div>
+            <main>Main</main>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
